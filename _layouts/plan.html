@@ -16,18 +16,20 @@
           <h1 class="page-header">Animal Services</h1>
 
           <blockquote>
-            <p>The <b>mission</b> of the Austin Animal Services Department is to prevent animal homelessness and promote human, compassionate treatment of animals by enforcing regulations, providing a safety net for lost or homeless animals, and achieving live outcomes for at least 90% of sheltered pets.</p>
+            {% plans.mission %}
             <p><b>Goals:</b>
               <ul>
-                <li>Maintain live outcomes to 90% of the companion animals who enter our care</li>
-                <li>Maintain a shelter intake rate of 2 or fewer per capita</li>
-                <li>Provide preventative surgeries (spay/neuters) for at least 13,300 animals annually</li>
+                <li>{% plans.goal-1 %}</li>
+                <li>{% plans.goal-2 %}</li>
+                <li>{% plans.goal-3 %}</li>
               </ul>
             </p>
-            <footer>page 39, <cite title="City of Austin Proposed Budget Vol. 1"><a href="https://assets.austintexas.gov/budget/15-16/downloads/FY16_Proposed_Budget_Vol_1.pdf">City of Austin Proposed Budget Vol. 1</a></cite></footer>
+<!--             <footer>page {% plans.about-source-page-num %}, <cite title=""><a href= {% plans.about-source-href %} >{% plans.about-source-text %}</a></cite></footer> -->
           </blockquote>
 
-          <h4 class="section-header">Key Contacts</h4>
+          {{ content }}
+
+<!--           <h4 class="section-header">Key Contacts</h4>
 
           <div class="table-responsive">
             <table class="table table-striped">
@@ -78,21 +80,17 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-         
-          <div class="row placeholders">
-            
-          </div>
+          </div> -->
 
           <!-- <h2 class="sub-header">Performance Metrics</h2> -->
 
-          <h4 class="sub-header">Data Wishlist</h4>
+         <!--  <h4 class="sub-header">Data Wishlist</h4> -->
 
-          <div>
+          <!-- <div>
             <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1nbIZQV_J5Ar16Zc873PiPcSWZ_rtyJrCWT31L8UWrjg/pubchart?oid=1256666136&amp;format=interactive"></iframe>
-          </div>
+          </div> -->
 
-          <h4 class="sub-header">Open Data Assets</h4>
+<!--           <h4 class="sub-header">Open Data Assets</h4>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -142,10 +140,10 @@
             </table>
           </div>
 
-           <h4 class="sub-header">Recent Activity</h4>
+           <h4 class="sub-header">Recent Activity</h4> -->
 
         </div><!--#main-->
-      <div><!--#row-->
+      </div><!--#row-->
     </div><!--#continer-fluid-->
 
     {% include footer.html %}
