@@ -13,86 +13,22 @@
       {% include side-nav.html%}
 
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Animal Services</h1>
+          <h1 class="page-header">{{page.dept}} | Open Data Plan</h1>
 
+         <h5>About the {{page.dept-kind}}:</h5>
           <blockquote>
-            <p>The <b>mission</b> of the Austin Animal Services Department is to prevent animal homelessness and promote human, compassionate treatment of animals by enforcing regulations, providing a safety net for lost or homeless animals, and achieving live outcomes for at least 90% of sheltered pets.</p>
+            {{ page.mission }}
             <p><b>Goals:</b>
               <ul>
-                <li>Maintain live outcomes to 90% of the companion animals who enter our care</li>
-                <li>Maintain a shelter intake rate of 2 or fewer per capita</li>
-                <li>Provide preventative surgeries (spay/neuters) for at least 13,300 animals annually</li>
+                <li>{{ page.goal-1 }}</li>
+                <li>{{ page.goal-2 }}</li>
+                <li>{{ page.goal-3 }}</li>
               </ul>
             </p>
-            <footer>page 39, <cite title="City of Austin Proposed Budget Vol. 1"><a href="https://assets.austintexas.gov/budget/15-16/downloads/FY16_Proposed_Budget_Vol_1.pdf">City of Austin Proposed Budget Vol. 1</a></cite></footer>
+            <footer>page {{ page.about-source-page-num }}, <cite title=""><a href= {{ page.about-source-href }} >{{ page.about-source-text }}</a></cite></footer>
           </blockquote>
 
-          <h4 class="section-header">Key Contacts</h4>
-
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Role</th>
-                  <th>Name</th>
-                  <th>Title</th>
-                  <th>Last Verified</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Open Data Liaison</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>Power User</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>Publisher</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>Storyteller</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>Storyteller</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>DBA</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-         
-          <div class="row placeholders">
-            
-          </div>
-
-          <!-- <h2 class="sub-header">Performance Metrics</h2> -->
-
-          <h4 class="sub-header">Data Wishlist</h4>
-
-          <div>
-            <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1nbIZQV_J5Ar16Zc873PiPcSWZ_rtyJrCWT31L8UWrjg/pubchart?oid=1256666136&amp;format=interactive"></iframe>
-          </div>
-
-          <h4 class="sub-header">Open Data Assets</h4>
+          <h3 class="sub-header">Open Data Assets</h3>
           <div class="table-responsive">
             <table class="table table-striped">
               <thead>
@@ -107,45 +43,56 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>table</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                  <td>Published</td>
-                </tr>
-                <tr>
-                  <td>table</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                  <td>Planned</td>
-                </tr>
-                <tr>
-                  <td>geo</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                  <td>dolor</td>
-                </tr>
-                <tr>
-                  <td>table</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                  <td>dolor</td>
+                  <td>{{page.asset1-kind}}</td>
+                  <td>{{page.asset1-name}}</td>
+                  <td>{{page.asset1-location}}</td>
+                  <td>{{page.asset1-condition}}</td>
+                  <td>{{page.asset1-currently}}</td>
+                  <td>{{page.asset1-last-review}}</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-           <h4 class="sub-header">Recent Activity</h4>
+          <h3 class="section-header">Key Contacts</h3>
+
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Name</th>
+                  <th>Title</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Open Data Liaison</td>
+                  <td>{{page.liaison-name}}</td>
+                  <td>{{page.liaison-title}}</td>
+                  <td>{{page.liaison-email}}</td>
+                </tr>
+                <tr>
+                  <td>Executive Champion</td>
+                  <td>{{page.exec-name}}</td>
+                  <td>{{page.exec-title}}</td>
+                  <td>{{page.exec-email}}</td>
+                </tr>
+                <tr>
+                  <td>lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+           <h4 class="sub-header">Recent Activity</h4> -->
 
         </div><!--#main-->
-      <div><!--#row-->
+      </div><!--#row-->
     </div><!--#continer-fluid-->
 
     {% include footer.html %}
