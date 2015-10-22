@@ -9,8 +9,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username: 
 github_username:
-collections:
-- plans
+
+# defaults:
+#   -
+#     scope:
+#       path: "plans"
+#       type: "pages" 
+#     values:
+#       layout: "plan" 
 
 # Build settings
 markdown: kramdown
