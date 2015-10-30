@@ -1,7 +1,7 @@
 ---
-layout: plan
+layout: departments
 
-dept: Health and Human Services
+dept: Neighborhood Housing and Community Development
 
 dept-kind: Department
 

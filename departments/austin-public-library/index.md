@@ -1,7 +1,7 @@
 ---
-layout: plan
+layout: departments
 
-dept: Neighborhood Housing and Community Development
+dept: Austin Code
 
 dept-kind: Department
 
