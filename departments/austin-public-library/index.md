@@ -1,21 +1,21 @@
 ---
-layout: plan
+layout: departments
 
-dept: Health and Human Services
+dept: Austin Public Library
 
 dept-kind: Department
 
 
 
-mission: 
+mission:
 
 
 
-goal-1: 
+goal-1:
 
-goal-2: 
+goal-2:
 
-goal-3: 
+goal-3:
 
 goal-4:
 
@@ -23,11 +23,11 @@ goal-5:
 
 
 
-about-source-text: 
+about-source-text:
 
-about-source-href: 
+about-source-href:
 
-about-source-page-num: 
+about-source-page-num:
 
 
 
@@ -67,11 +67,11 @@ asset2-last-review:
 
 
 
-liaison-name: 
+liaison-name:
 
-liaison-title: 
+liaison-title:
 
-liaison-dept: 
+liaison-dept:
 
 liaison-email:
 

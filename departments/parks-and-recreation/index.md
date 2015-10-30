@@ -1,7 +1,7 @@
 ---
-layout: plan
+layout: departments
 
-dept: Austin Code
+dept: Parks and Recreation
 
 dept-kind: Department
 

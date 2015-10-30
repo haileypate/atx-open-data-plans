@@ -1,7 +1,7 @@
 ---
-layout: plan
+layout: departments
 
-dept: Parks and Recreation
+dept: Neighborhood Housing and Community Development
 
 dept-kind: Department
 
