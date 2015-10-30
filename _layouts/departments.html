@@ -13,19 +13,19 @@
       {% include side-nav.html%}
 
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">{{departments.dept}} | Open Data Plan</h1>
+          <h1 class="page-header">{{ page.dept }} | Open Data Plan</h1>
 
-         <h5>About the {{departments.dept-kind}}:</h5>
+         <h5>About the {{page.dept-kind}}:</h5>
           <blockquote>
-            {{departments.mission }}
+            {{page.mission }}
             <p><b>Goals:</b>
               <ul>
-                <li>{{departments.goal-1 }}</li>
-                <li>{{departments.goal-2 }}</li>
-                <li>{{departments.goal-3 }}</li>
+                <li>{{page.goal-1 }}</li>
+                <li>{{page.goal-2 }}</li>
+                <li>{{page.goal-3 }}</li>
               </ul>
             </p>
-            <footer>page {{departments.about-source-page-num }}, <cite title=""><a href= {{departments.about-source-href }} >{{departments.about-source-text }}</a></cite></footer>
+            <footer>{{page.about-source-page-num }} <cite title=""><a href= {{page.about-source-href }} >{{page.about-source-text }}</a></cite></footer>
           </blockquote>
 
           <h3 class="sub-header">Open Data Assets</h3>
@@ -43,12 +43,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>{{departments.asset1-kind}}</td>
-                  <td>{{departments.asset1-name}}</td>
-                  <td>{{departments.asset1-location}}</td>
-                  <td>{{departments.asset1-condition}}</td>
-                  <td>{{departments.asset1-currently}}</td>
-                  <td>{{departments.asset1-last-review}}</td>
+                  <td>{{page.asset1-kind}}</td>
+                  <td>{{page.asset1-name}}</td>
+                  <td>{{page.asset1-location}}</td>
+                  <td>{{page.asset1-condition}}</td>
+                  <td>{{page.asset1-currently}}</td>
+                  <td>{{page.asset1-last-review}}</td>
                 </tr>
               </tbody>
             </table>
@@ -69,15 +69,15 @@
               <tbody>
                 <tr>
                   <td>Open Data Liaison</td>
-                  <td>{{departments.liaison-name}}</td>
-                  <td>{{departments.liaison-title}}</td>
-                  <td>{{departments.liaison-email}}</td>
+                  <td>{{page.liaison-name}}</td>
+                  <td>{{page.liaison-title}}</td>
+                  <td>{{page.liaison-email}}</td>
                 </tr>
                 <tr>
                   <td>Executive Champion</td>
-                  <td>{{departments.exec-name}}</td>
-                  <td>{{departments.exec-title}}</td>
-                  <td>{{departments.exec-email}}</td>
+                  <td>{{page.exec-name}}</td>
+                  <td>{{page.exec-title}}</td>
+                  <td>{{page.exec-email}}</td>
                 </tr>
                 <tr>
                   <td>lorem</td>
